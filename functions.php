@@ -10,6 +10,16 @@ if( function_exists( 'add_theme_support' ) ) {
     // set_post_thumbnail_size(  );
 }
 
+// Register our navigation menus
+function ritualplays_navs() {
+    register_nav_menus(
+        array(
+            'social-icons'      => __( 'Social Icons' ),
+            'main_navigation'   => __( 'Main Navigation' )
+         )
+    );
+}
+
 // Include styles
 function ritualplays_styles() {
     // Remote styles first
@@ -65,6 +75,8 @@ remove_action('wp_head', 'wp_generator');
 
 // Add functions to run time
 
+// Register navs
+add_action( 'init', 'ritualplays_navs')
 // Include styles
 add_action( 'wp_enqueue_scripts', 'ritualplays_styles' );
 // Include scripts
