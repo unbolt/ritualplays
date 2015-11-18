@@ -3,6 +3,12 @@
  *      THEME SUPPORT SETUP
  */
 
+if( function_exists( 'add_theme_support' ) ) {
+    
+    // Post thumbnails
+    add_theme_support( 'post-thumbnails' );
+    // set_post_thumbnail_size(  );
+}
 
 // Include styles
 function ritualplays_styles() {
