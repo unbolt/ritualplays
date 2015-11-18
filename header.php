@@ -12,6 +12,9 @@
     <body>
         <div class="container">
             <div class="row">
+                <?php wp_nav_menu( array( 'theme_location' => 'main_navigation' ) ); ?>
+            </div>
+            <div class="row">
                 <div class="col-md-12">
                     <h1>Header</h1>
                 </div>
