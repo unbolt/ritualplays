@@ -76,7 +76,7 @@ remove_action('wp_head', 'wp_generator');
 // Add functions to run time
 
 // Register navs
-add_action( 'init', 'ritualplays_navs')
+add_action( 'init', 'ritualplays_navs');
 // Include styles
 add_action( 'wp_enqueue_scripts', 'ritualplays_styles' );
 // Include scripts
